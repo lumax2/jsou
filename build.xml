@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="jsoup">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/tts9/tts9/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../../mavenRepository/junit/junit/4.10/junit-4.10.jar"/>
+        <pathelement location="../../../mavenRepository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-beans/4.1.3.RELEASE/spring-beans-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-aop/4.1.3.RELEASE/spring-aop-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-expression/4.1.3.RELEASE/spring-expression-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-jdbc/4.1.3.RELEASE/spring-jdbc-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-tx/4.1.3.RELEASE/spring-tx-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-aspects/4.1.3.RELEASE/spring-aspects-4.1.3.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/aspectj/aspectjweaver/1.8.4/aspectjweaver-1.8.4.jar"/>
+        <pathelement location="../../../mavenRepository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar"/>
+        <pathelement location="../../../mavenRepository/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2.jar"/>
+        <pathelement location="../../../mavenRepository/com/github/miemiedev/mybatis-paginator/1.2.15/mybatis-paginator-1.2.15.jar"/>
+        <pathelement location="../../../mavenRepository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar"/>
+        <pathelement location="../../../mavenRepository/mysql/mysql-connector-java/5.1.32/mysql-connector-java-5.1.32.jar"/>
+        <pathelement location="../../../mavenRepository/com/github/abel533/mapper/2.3.2/mapper-2.3.2.jar"/>
+        <pathelement location="../../../mavenRepository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar"/>
+        <pathelement location="../../../mavenRepository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="../../../mavenRepository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+        <pathelement location="../../../mavenRepository/com/github/pagehelper/pagehelper/3.4.2/pagehelper-3.4.2.jar"/>
+        <pathelement location="../../../mavenRepository/com/github/jsqlparser/jsqlparser/0.9.1/jsqlparser-0.9.1.jar"/>
+        <pathelement location="../../../mavenRepository/com/jolbox/bonecp-spring/0.8.0.RELEASE/bonecp-spring-0.8.0.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/com/google/guava/guava/15.0/guava-15.0.jar"/>
+        <pathelement location="../../../mavenRepository/com/zaxxer/HikariCP-java6/2.3.9/HikariCP-java6-2.3.9.jar"/>
+        <pathelement location="../../../mavenRepository/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar"/>
+        <pathelement location="../../../mavenRepository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar"/>
+        <pathelement location="../../../mavenRepository/log4j/log4j/1.2.16/log4j-1.2.16.jar"/>
+        <pathelement location="../../../mavenRepository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.jar"/>
+        <pathelement location="../../../mavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar"/>
+        <pathelement location="../../../mavenRepository/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2.jar"/>
+        <pathelement location="../../../mavenRepository/org/jsoup/jsoup/1.9.1/jsoup-1.9.1.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar"/>
+        <pathelement location="../../../mavenRepository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar"/>
+        <pathelement location="../../../mavenRepository/com/rabbitmq/amqp-client/3.5.1/amqp-client-3.5.1.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/amqp/spring-rabbit/1.4.0.RELEASE/spring-rabbit-1.4.0.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/amqp/spring-amqp/1.4.0.RELEASE/spring-amqp-1.4.0.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/spring-messaging/4.1.2.RELEASE/spring-messaging-4.1.2.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/org/springframework/retry/spring-retry/1.1.2.RELEASE/spring-retry-1.1.2.RELEASE.jar"/>
+        <pathelement location="../../../mavenRepository/jstl/jstl/1.2/jstl-1.2.jar"/>
+        <pathelement location="../../../mavenRepository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+        <pathelement location="../../../mavenRepository/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar"/>
+        <pathelement location="../../../mavenRepository/joda-time/joda-time/2.5/joda-time-2.5.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/commons/commons-io/2.4/commons-io-2.4.jar"/>
+        <pathelement location="../../../mavenRepository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar"/>
+        <pathelement location="../../../mavenRepository/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+        <pathelement location="../../../mavenRepository/redis/clients/jedis/2.6.0/jedis-2.6.0.jar"/>
+        <pathelement location="../../../mavenRepository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar"/>
+        <pathelement location="../../../mavenRepository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+        <pathelement location="../../../mavenRepository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar"/>
+        <pathelement location="../../../mavenRepository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+        <pathelement location="../../../mavenRepository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
+        <pathelement location="../../../mavenRepository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
+    </path>
+    <path id="jsoup.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CountWordRate.test1.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.JDUtil.run.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.JsoupController.run.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.SpidderService.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.SpidderService.run.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Teacher.t.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestClass.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestConnection.jdbcFind.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestJsoup.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestJsoup.page.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestJsoup.test1.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestThread (1).classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestThread.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestThread.test1.classpath">
+        <path refid="jsoup.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/main/resources"/>
+            <exclude name="**"/>
+            <classpath refid="jsoup.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="jsoup.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CountWordRate.test1">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.CountWordRate" todir="${junit.output.dir}"/>
+            <classpath refid="run.CountWordRate.test1.classpath"/>
+        </junit>
+    </target>
+    <target name="JDUtil.run">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.JDUtil" todir="${junit.output.dir}"/>
+            <classpath refid="run.JDUtil.run.classpath"/>
+        </junit>
+    </target>
+    <target name="JsoupController.run">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.controller.JsoupController" todir="${junit.output.dir}"/>
+            <classpath refid="run.JsoupController.run.classpath"/>
+        </junit>
+    </target>
+    <target name="SpidderService">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.service.SpidderService" todir="${junit.output.dir}"/>
+            <classpath refid="run.SpidderService.classpath"/>
+        </junit>
+    </target>
+    <target name="SpidderService.run">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.service.SpidderService" todir="${junit.output.dir}"/>
+            <classpath refid="run.SpidderService.run.classpath"/>
+        </junit>
+    </target>
+    <target name="Teacher.t">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.Teacher" todir="${junit.output.dir}"/>
+            <classpath refid="run.Teacher.t.classpath"/>
+        </junit>
+    </target>
+    <target name="TestClass">
+        <java classname="jsoup.TestClass" failonerror="true" fork="yes">
+            <classpath refid="run.TestClass.classpath"/>
+        </java>
+    </target>
+    <target name="TestConnection.jdbcFind">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestConnection" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestConnection.jdbcFind.classpath"/>
+        </junit>
+    </target>
+    <target name="TestJsoup">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestJsoup" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestJsoup.classpath"/>
+        </junit>
+    </target>
+    <target name="TestJsoup.page">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestJsoup" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestJsoup.page.classpath"/>
+        </junit>
+    </target>
+    <target name="TestJsoup.test1">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestJsoup" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestJsoup.test1.classpath"/>
+        </junit>
+    </target>
+    <target name="TestThread (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestThread" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestThread (1).classpath"/>
+        </junit>
+    </target>
+    <target name="TestThread">
+        <java classname="jsoup.TestThread" failonerror="true" fork="yes">
+            <classpath refid="run.TestThread.classpath"/>
+        </java>
+    </target>
+    <target name="TestThread.test1">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jsoup.TestThread" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestThread.test1.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
